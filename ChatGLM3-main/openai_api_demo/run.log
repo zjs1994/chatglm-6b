@@ -1,0 +1,29 @@
+Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]/usr/local/lib/python3.11/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+Loading checkpoint shards:  14%|█▍        | 1/7 [00:00<00:03,  1.71it/s]Loading checkpoint shards:  29%|██▊       | 2/7 [00:01<00:03,  1.66it/s]Loading checkpoint shards:  43%|████▎     | 3/7 [00:01<00:02,  1.66it/s]Loading checkpoint shards:  57%|█████▋    | 4/7 [00:02<00:01,  1.69it/s]Loading checkpoint shards:  71%|███████▏  | 5/7 [00:03<00:01,  1.64it/s]Loading checkpoint shards:  86%|████████▌ | 6/7 [00:03<00:00,  1.65it/s]Loading checkpoint shards: 100%|██████████| 7/7 [00:03<00:00,  1.89it/s]Loading checkpoint shards: 100%|██████████| 7/7 [00:03<00:00,  1.75it/s]
+INFO:     Started server process [4059015]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     10.2.8.134:53480 - "GET /docs HTTP/1.1" 200 OK
+INFO:     10.2.8.134:53480 - "GET /openapi.json HTTP/1.1" 200 OK
+2024-02-26 11:21:46.400 | DEBUG    | __main__:create_chat_completion:236 - ==== request ====
+{'messages': [ChatMessage(role='user', content='写一首五言绝句藏头诗，诗句的开头第一个连在一起为新年快乐', name='string', function_call=None)], 'temperature': 0.1, 'top_p': 0.1, 'max_tokens': 1024, 'echo': False, 'stream': False, 'repetition_penalty': 1.1, 'tools': {}}
+2024-02-26 11:21:49.391 | DEBUG    | __main__:create_chat_completion:317 - ==== message ====
+role='assistant' content='新家中岳东，\n年少学支公。\n快意乍四顾，\n乐亦在其中。' name=None function_call=None
+INFO:     10.2.8.134:53554 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+2024-02-26 11:22:49.179 | DEBUG    | __main__:create_chat_completion:236 - ==== request ====
+{'messages': [ChatMessage(role='user', content='写五首五言绝句藏头诗，诗句的开头第一个连在一起为新年快乐，每一个诗句中表达的是春节欢乐和谐的气氛', name='string', function_call=None)], 'temperature': 0.1, 'top_p': 0.1, 'max_tokens': 1024, 'echo': False, 'stream': False, 'repetition_penalty': 1.1, 'tools': {}}
+2024-02-26 11:22:50.884 | DEBUG    | __main__:create_chat_completion:317 - ==== message ====
+role='assistant' content='新家中岳东，\n年少学支公。\n快意乍四顾，\n乐亦在其中。\n乐亦在其中，\n中流击水舟。' name=None function_call=None
+INFO:     10.2.8.134:53586 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+2024-02-26 11:23:25.149 | DEBUG    | __main__:create_chat_completion:236 - ==== request ====
+{'messages': [ChatMessage(role='user', content='写五首五言绝句藏头诗，诗句的开头第一个连在一起为新年快乐，每一个诗句中表达的是春节欢乐和谐的气氛', name='string', function_call=None)], 'temperature': 0.1, 'top_p': 0.1, 'max_tokens': 1024, 'echo': False, 'stream': False, 'repetition_penalty': 1.1, 'tools': {}}
+2024-02-26 11:23:26.551 | DEBUG    | __main__:create_chat_completion:317 - ==== message ====
+role='assistant' content='新家中岳东，\n年少学支公。\n快意乍四顾，\n乐亦在其中。\n乐亦在其中，\n中流击水舟。' name=None function_call=None
+INFO:     10.2.8.134:53604 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+2024-02-26 11:23:40.331 | DEBUG    | __main__:create_chat_completion:236 - ==== request ====
+{'messages': [ChatMessage(role='user', content='写五首五言绝句藏头诗，诗句的开头第一个连在一起为新年快乐，每一个诗句中表达的是春节欢乐和谐的气氛', name='string', function_call=None)], 'temperature': 0.8, 'top_p': 0.8, 'max_tokens': 1024, 'echo': False, 'stream': False, 'repetition_penalty': 1.1, 'tools': {}}
+2024-02-26 11:23:41.687 | DEBUG    | __main__:create_chat_completion:317 - ==== message ====
+role='assistant' content='新家中岳东，\n年少学支公。\n快意乍四顾，\n乐亦在其中。\n快乐共欢歌，\n和谐共团圆。' name=None function_call=None
+INFO:     10.2.8.134:53614 - "POST /v1/chat/completions HTTP/1.1" 200 OK
